@@ -1,0 +1,535 @@
+/* ===========COMMON CSS START=========== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: 'DM Sans', sans-serif;
+    line-height: 0.8px;
+}
+body{
+    overflow-x: hidden;
+}
+
+/* ===========COMMON CSS END=========== */
+
+/* ===========NAVBAR CSS START=========== */
+.navbar {
+    position: absolute;
+    width: 100%;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: end;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    padding-top: 50px;
+}
+
+a.navbar-brand {
+    padding: 0px;
+}
+
+ul.navbar-nav.mb-2.mb-lg-0 li a {
+    padding: 0 20px;
+}
+
+.navbar-btn a {
+    padding: 20px 44px;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: #27272F;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+    border: 2px solid #FFDC40;
+    border-radius: 50px;
+    margin-left: 20px;
+    transition: all linear 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar-btn a::after {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #FFDC40;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 55px;
+    z-index: -1;
+    transition: all linear 0.4s;
+}
+
+.navbar-btn a:hover::after {
+    width: 100%;
+}
+
+ul.navbar-nav.mb-2.mb-lg-0 .nav-item .nav-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.03em;
+    color: #73798E;
+    transition: all linear 0.4s;
+}
+
+ul.navbar-nav.mb-2.mb-lg-0 .nav-item .nav-link:hover {
+    color: #5D51F2;
+}
+
+
+
+/* ===========NAVBAR CSS END=========== */
+
+/* ===========BANNER CSS STRAT=========== */
+#banner {
+    padding-top: 270px;
+    padding-bottom: 304px;
+}
+
+.banner-heading h5 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.03em;
+    color: #27272F;
+    margin-bottom: 40px;
+}
+
+.banner-heading h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 128px;
+    line-height: 128px;
+    color: #27272F;
+    letter-spacing: -0.06em;
+    margin-bottom: 100px;
+    padding-right: 200px;
+}
+
+.banner-heading span {
+    color: #5D51F2;
+}
+
+.banner-heading a p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #27272F;
+    padding: 25px 40px;
+    background: #FFDC40;
+    border-radius: 55px;
+    width: 250px;
+    height: 80px;
+    margin-right: 30px;
+}
+
+.banner-heading a i {
+    width: 80px;
+    height: 80px;
+    background: #5D51F2;
+    border-radius: 55px;
+    line-height: 80px;
+    color: #ffff;
+    text-align: center;
+}
+
+
+
+/* ===========BANNER CSS END=========== */
+
+/* <!-- ================TECHNOLOGIES CSS PART START============== --> */
+#technologies {
+    background: #5D51F2;
+    padding-top: 550px;
+    padding-bottom: 200px;
+    position: relative;
+    color: #ffff;
+
+}
+
+.technologies-img img {
+    position: absolute;
+    width: 600px;
+    right: 0px;
+    top: -158px;
+}
+
+.technologies-heading h2 {
+    font-weight: 500;
+    font-size: 108px;
+    line-height: 108px;
+    letter-spacing: -0.06em;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.tech-f h4 {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 44px;
+    letter-spacing: -0.06em;
+    color: #ffff;
+}
+
+.tech-middle h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 44px;
+    letter-spacing: -0.06em;
+
+    color: #FFFFFF;
+}
+
+.tech-middle p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #E1E1E2;
+    margin-top: 40px;
+}
+
+.tech-middle a {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    border-bottom: 2px solid #fff;
+    margin-top: 208px;
+}
+
+.tech-end a {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    border-bottom: 2px solid #fff;
+}
+
+.tech-end {
+    display: flex;
+    justify-content: end;
+}
+
+.tech {
+    margin: 70px 0px;
+}
+
+/* <!-- ================ powerful-software CSS PART START============== --> */
+#powerful-software {
+    padding-top: 200px;
+}
+
+.software-heading h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 108px;
+    line-height: 120px;
+    text-align: center;
+    letter-spacing: -0.06em;
+    margin-bottom: 135px;
+}
+
+.software-heading span {
+    color: #5D51F2;
+}
+
+.software-play {
+    display: none;
+}
+
+.software-img {
+    position: relative;
+}
+
+.software-img img {
+    width: 100%;
+
+}
+
+.software-play a i {
+    width: 100px;
+    height: 100px;
+    border-radius: 55px;
+    background: #5D51F2;
+    text-align: center;
+    line-height: 100px;
+    color: #ffff;
+    margin-left: -40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+
+}
+
+.software-btn {
+    margin-left: 90px;
+    margin-top: 50%;
+}
+
+.software-btn i {
+    color: #c7c7c7c7;
+    transition: all linear 0.4s;
+    font-size: 40px;
+}
+
+.software-btn i:hover {
+    color: #5D51F2;
+    cursor: pointer;
+}
+
+/* <!-- ================powerful-softwareCSS PART END============== --> */
+
+
+/* <!-- ================Latest Projects CSS PART start============== --> */
+#Latest-Projects {
+    background: #27272F;
+    padding: 200px;
+}
+
+.project-heading h2 {
+    font-weight: 500;
+    font-size: 108px;
+    line-height: 108px;
+    letter-spacing: -0.06em;
+    color: #FFFFFF;
+    margin-bottom: 100px;
+}
+
+.project-right-text {
+    padding-left: 88px;
+}
+
+.project-right-text h2 {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 50px;
+    letter-spacing: -0.06em;
+    color: #FFFFFF;
+    margin-top: 76px;
+    margin-bottom: 30px;
+}
+
+.project-right-text h6 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #ffff;
+}
+
+.project-right-text span {
+    color: #73798E;
+}
+
+.project-right-text p {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: #E1E1E2;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.project-right-text a {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 55px;
+    padding: 25px 40px;
+}
+
+.project-top {
+    margin-top: 100px;
+}
+
+/* * <!-- ================Latest Projects CSS PART END============== --> */
+
+
+
+/* <!-- ================DESIGN CSS PART START============== --> */
+#design {
+    background-image: url(../images/Group\ 93.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px 166px 163px 146px;
+}
+
+.design-img img {
+    width: 100%;
+}
+
+/* <!-- ================DESIGN CSS PART END============== --> */
+
+
+/* <!-- ================SUBSCRIBE CSS PART END============== --> */
+#subscribe {
+    background: #27272F;
+    padding-top: 206px;
+    padding-bottom: 200px;
+}
+
+.subscribe-heading h2 {
+    font-weight: 500;
+    font-size: 98px;
+    line-height: 128px;
+    text-align: center;
+    letter-spacing: -0.06em;
+    color: #FFFFFF;
+    margin-bottom: 47px;
+}
+
+.subscribe-heading p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    color: #E1E1E2;
+    padding: 0 186px;
+    margin-bottom: 100px;
+}
+
+.subscribe-btn input {
+    padding: 41px 757px 41px 50px;
+    border-radius: 55px;
+    background: rgba(255, 255, 255, 0.05);
+    border: none;
+    color: #ffff;
+}
+
+
+.subscribe-input {
+    font-size: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    color: #73798E;
+}
+
+.subscribe-btn {
+    position: relative;
+}
+
+#submit-btn {
+    padding: 36px 48px;
+    background: #5D51F2;
+    border-radius: 55px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    right: 154px;
+    border-color: #5D51F2;
+}
+
+
+
+/* <!-- ================SUBSCRIBE  CSS PART END============== --> */
+
+
+/* <!-- ================FOOTER CSS PART START============== --> */
+.footer-img {
+    padding-top: 204px;
+    padding-bottom: 131px;
+}
+
+.footer-text {
+    padding-top: 200px;
+    padding-bottom: 80px;
+}
+
+.footer-text h2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #232735;
+}
+
+.footer-text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #7B8195;
+    margin-top: 30px;
+}
+
+.footer-icon {
+    padding-top: 200px;
+    padding-bottom: 80px;
+}
+
+.footer-icon a {
+    background: #27272F;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffff;
+    margin: 0 4px;
+}
+
+
+
+/* <!-- ================FOOTER CSS PART END============== --> */
+
+/* <!-- ================COPYRIGHT CSS PART END============== --> */
+#copyright {
+    padding-top: 34px;
+    padding-bottom: 56px;
+}
+
+.opyright-text p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #73798E;
+}
+.copyright-end p{
+    margin-right: 30px;
+    color: #73798E;
+}
+
+
+
+/* <!-- ================COPYRIGHT CSS PART END============== --> */
