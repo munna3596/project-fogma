@@ -25,6 +25,7 @@ a {
     font-family: 'DM Sans', sans-serif;
     line-height: 0.8px;
 }
+
 body{
     overflow-x: hidden;
 }
@@ -35,6 +36,7 @@ body{
 .navbar {
     position: absolute;
     width: 100%;
+    margin-top: 20px;
 }
 
 .navbar-collapse {
@@ -240,16 +242,13 @@ ul.navbar-nav.mb-2.mb-lg-0 .nav-item .nav-link:hover {
     justify-content: end;
 }
 
-.tech {
-    margin: 70px 0px;
-}
 
 /* <!-- ================ powerful-software CSS PART START============== --> */
 #powerful-software {
     padding-top: 200px;
 }
 
-.software-heading h2 {
+.software-heading {
     font-style: normal;
     font-weight: 500;
     font-size: 108px;
@@ -262,11 +261,6 @@ ul.navbar-nav.mb-2.mb-lg-0 .nav-item .nav-link:hover {
 .software-heading span {
     color: #5D51F2;
 }
-
-.software-play {
-    display: none;
-}
-
 .software-img {
     position: relative;
 }
@@ -274,6 +268,9 @@ ul.navbar-nav.mb-2.mb-lg-0 .nav-item .nav-link:hover {
 .software-img img {
     width: 100%;
 
+}
+.software-img-slide {
+    margin-bottom: -24px;
 }
 
 .software-play a i {
@@ -289,6 +286,7 @@ ul.navbar-nav.mb-2.mb-lg-0 .nav-item .nav-link:hover {
     top: 50%;
     left: 50%;
     transform: translateY(-50%);
+    z-index: 999;
 
 }
 
@@ -327,23 +325,23 @@ ul.navbar-nav.mb-2.mb-lg-0 .nav-item .nav-link:hover {
 }
 
 .project-right-text {
-    padding-left: 88px;
+    padding-left: 70px;
 }
 
 .project-right-text h2 {
     font-weight: 400;
-    font-size: 44px;
-    line-height: 50px;
+    font-size: 40px;
+    line-height: 45px;
     letter-spacing: -0.06em;
     color: #FFFFFF;
-    margin-top: 76px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .project-right-text h6 {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 17px;
+    line-height: 14px;
     color: #ffff;
 }
 
@@ -355,25 +353,24 @@ ul.navbar-nav.mb-2.mb-lg-0 .nav-item .nav-link:hover {
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 34px;
+    font-size: 19px;
+    line-height: 32px;
     color: #E1E1E2;
-    margin-top: 50px;
-    margin-bottom: 80px;
+    margin-top: 35px;
+    margin-bottom: 36px;
 }
 
 .project-right-text a {
     font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
     text-align: center;
     letter-spacing: -0.03em;
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
     border-radius: 55px;
-    padding: 25px 40px;
+    padding: 20px 32px;
 }
-
 .project-top {
     margin-top: 100px;
 }
@@ -384,7 +381,7 @@ ul.navbar-nav.mb-2.mb-lg-0 .nav-item .nav-link:hover {
 
 /* <!-- ================DESIGN CSS PART START============== --> */
 #design {
-    background-image: url(../images/Group\ 93.png);
+    background-image: url(../images/Group93.png);
     background-repeat: no-repeat;
     background-position: center;
     padding: 100px 166px 163px 146px;
@@ -423,30 +420,28 @@ ul.navbar-nav.mb-2.mb-lg-0 .nav-item .nav-link:hover {
     padding: 0 186px;
     margin-bottom: 100px;
 }
-
 .subscribe-btn input {
-    padding: 41px 757px 41px 50px;
-    border-radius: 55px;
+    width: 970px;
+    height: 100px;
     background: rgba(255, 255, 255, 0.05);
-    border: none;
-    color: #ffff;
-}
-
-
-.subscribe-input {
-    font-size: 30px;
+    border-radius: 50px;
+    margin: auto;
     font-weight: 500;
     font-size: 20px;
     line-height: 18px;
     color: #73798E;
+    border: none;
+    box-shadow: none;
+    padding-left: 50px;
 }
-
-.subscribe-btn {
-    position: relative;
+input#exampleInputEmail1:focus {
+    background: rgba(255, 255, 255, 0.05);
+    color: #73798E;
+    border: none;
+    box-shadow: none;
 }
-
 #submit-btn {
-    padding: 36px 48px;
+    padding: 34px 48px;
     background: #5D51F2;
     border-radius: 55px;
     font-weight: 700;
@@ -455,13 +450,9 @@ ul.navbar-nav.mb-2.mb-lg-0 .nav-item .nav-link:hover {
     text-align: center;
     letter-spacing: -0.03em;
     color: #FFFFFF;
-    position: absolute;
-    top: 0;
-    right: 154px;
     border-color: #5D51F2;
+    margin-right: 157px;
 }
-
-
 
 /* <!-- ================SUBSCRIBE  CSS PART END============== --> */
 
@@ -509,25 +500,35 @@ ul.navbar-nav.mb-2.mb-lg-0 .nav-item .nav-link:hover {
     margin: 0 4px;
 }
 
+.boder-last {
+    border: 1px solid #dddd;
+}
+
 
 
 /* <!-- ================FOOTER CSS PART END============== --> */
 
 /* <!-- ================COPYRIGHT CSS PART END============== --> */
 #copyright {
-    padding-top: 34px;
-    padding-bottom: 56px;
+    padding-top: 50px;
+    padding-bottom: 34px;
 }
 
-.opyright-text p{
+.opyright-text p {
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
     color: #73798E;
+
 }
-.copyright-end p{
+
+.copyright-end p {
     margin-right: 30px;
     color: #73798E;
+}
+
+.opyright-text {
+    line-height: 100px;
 }
 
 
