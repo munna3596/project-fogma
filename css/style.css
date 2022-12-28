@@ -141,17 +141,35 @@ ul.navbar-nav.mb-2.mb-lg-0 .nav-item .nav-link:hover {
 .banner-heading a p {
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 30px;
     color: #27272F;
     padding: 25px 40px;
-    background: #FFDC40;
     border-radius: 55px;
     width: 250px;
     height: 80px;
     margin-right: 30px;
+    border: 1px solid #232735;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
 }
 
+.banner-heading a p::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #FFDC40;
+    border-radius: 55px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all linear .4s;
+}
+.banner-heading a p:hover::after{
+    width: 100%;
+}
 .banner-heading a i {
     width: 80px;
     height: 80px;
@@ -362,14 +380,32 @@ ul.navbar-nav.mb-2.mb-lg-0 .nav-item .nav-link:hover {
 
 .project-right-text a {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 24px;
     text-align: center;
     letter-spacing: -0.03em;
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
     border-radius: 55px;
-    padding: 20px 32px;
+    padding: 19px 32px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.project-right-text a::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #FFDC40;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 55px;
+    transition: all linear .4s;
+}
+.project-right-text a:hover::after{
+    width: 100%;
 }
 .project-top {
     margin-top: 100px;
@@ -381,10 +417,11 @@ ul.navbar-nav.mb-2.mb-lg-0 .nav-item .nav-link:hover {
 
 /* <!-- ================DESIGN CSS PART START============== --> */
 #design {
-    background-image: url(../images/Group93.png);
+    background-image: url(../images/Group\ 96.png);
     background-repeat: no-repeat;
     background-position: center;
-    padding: 100px 166px 163px 146px;
+    padding: 100px 0px;
+    background-size: cover;
 }
 
 .design-img img {
